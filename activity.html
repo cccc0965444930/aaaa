@@ -8,22 +8,18 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <meta
-    name="description"
-    content="互動式活動指引"
-  >
-
   <title>互動指引</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css?v=5">
 </head>
 
 <body>
   <main class="app">
-    <header class="chat-header">
-      <div class="avatar">🙏</div>
 
-      <div class="header-content">
+    <header class="chat-header">
+      <div class="header-avatar">🙏</div>
+
+      <div class="header-text">
         <h1 id="pageTitle">載入中</h1>
         <p>線上互動指引</p>
       </div>
@@ -38,35 +34,23 @@
       </button>
     </header>
 
-    <section
-      id="loadingScreen"
-      class="status-screen"
-    >
-      <div class="loading-spinner"></div>
+    <section id="loadingScreen" class="status-screen">
+      <div class="spinner"></div>
       <p>正在載入活動內容……</p>
     </section>
 
-    <section
-      id="errorScreen"
-      class="status-screen hidden"
-    >
+    <section id="errorScreen" class="status-screen hidden">
       <div class="error-icon">!</div>
       <h2>無法開啟活動</h2>
       <p id="errorMessage"></p>
     </section>
 
-    <section
-      id="chatScreen"
-      class="chat-screen hidden"
-    >
-      <div
-        id="messages"
-        class="messages"
-        aria-live="polite"
-      ></div>
+    <section id="chatScreen" class="chat-screen hidden">
+      <div id="messages" class="messages"></div>
     </section>
+
   </main>
 
-  <script src="activity.js"></script>
+  <script src="./activity.js?v=5"></script>
 </body>
 </html>
