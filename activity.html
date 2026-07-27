@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>肌膚檢測</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="page">
+    <section id="loading" class="card">
+      活動載入中……
+    </section>
+
+    <section id="error" class="card hidden">
+      <h1>無法開啟活動</h1>
+      <p id="errorMessage"></p>
+    </section>
+
+    <section id="activity" class="card hidden">
+      <h1 id="title"></h1>
+      <p id="subtitle" class="subtitle"></p>
+
+      <div class="question">
+        <p id="question1"></p>
+
+        <div class="answers">
+          <button type="button">是</button>
+          <button type="button">否</button>
+        </div>
+      </div>
+
+      <div class="question">
+        <p id="question2"></p>
+
+        <div class="answers">
+          <button type="button">是</button>
+          <button type="button">否</button>
+        </div>
+      </div>
+
+      <a
+        id="lineButton"
+        class="line-button"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        加入 LINE 諮詢
+      </a>
+    </section>
+  </main>
+
+  <script src="activity.js"></script>
+</body>
+</html>
